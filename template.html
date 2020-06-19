@@ -15,10 +15,20 @@
 
 <body>
   <div id="container" style="width: 75%; margin: auto; padding-top: 50px;">
-    <h1>AWS Quota Code List</h1>
+    <h1>AWS Quota Code List 
+      <a href="https://github.com/spenserpothier/aws-quota-code-list/actions?query=workflow%3ABuild">
+        <img src="https://github.com/spenserpothier/aws-quota-code-list/workflows/Build/badge.svg" alt="Build Status">
+      </a>
+    </h1>
     <p>After going on a wild goose chase to try and find a list of quota codes on the internet I couldn't find one so I decided to generate the list myself.</p>
+    <p>
+      Please feel free to <a href="https://github.com/spenserpothier/aws-quota-code-list/issues/new">file isssues</a> or submit 
+      <a href="https://github.com/spenserpothier/aws-quota-code-list/pulls">pull requests</a>. 
+    </p>
     <div>
-      <a href="#" id="showhideall" onclick="expandy(this)" data-toggle=1>Collapse All</a>
+      <p>
+        <a href="#" id="showhideall" onclick="expandy(this)" data-toggle=1>Collapse All</a>
+      </p>
     </div>
     <div id="accordion">
       {% for service in services%}

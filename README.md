@@ -1,5 +1,7 @@
 # AWS Quota Code List
 
+![Build](https://github.com/spenserpothier/aws-quota-code-list/workflows/Build/badge.svg)
+
 Simple python/boto script to get the list of quota codes for use in quering service quotas.
 
 Example of using a quota code to find out the current quota for `Number of EIPs - VPC EIPs`
