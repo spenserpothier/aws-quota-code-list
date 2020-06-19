@@ -16,7 +16,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: "Gather quota codes"
-        env: 
+        env:
+          AWS_DEFAULT_REGION: us-west-2 
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
         run: python main.py
