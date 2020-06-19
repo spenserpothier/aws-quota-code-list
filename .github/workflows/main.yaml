@@ -30,4 +30,4 @@ jobs:
           git rm -r --cached .
           git add index.html
           git commit -m "Generated Page $(date +%Y-%m-%d)"
-          git push github gh-pages --force-with-lease
+          git push github gh-pages --force
